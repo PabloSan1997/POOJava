@@ -1,14 +1,15 @@
-import javax.print.Doc;
+package module;
+
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor extends Users{
+public class Doctor extends Users {
     //Atributo
     private String speciality;
 
-    Doctor(String name, String email){
+   public Doctor(String name, String email){
         super(name,email);
-        System.out.println("El nombre del Doctor asignado es: " + name);
+        System.out.println("El nombre del module.Doctor asignado es: " + name);
         this.speciality = speciality;
     }
 
@@ -33,6 +34,11 @@ public class Doctor extends Users{
     @Override
     public String toString() {
         return super.toString() + "\nSpeciality: " + speciality + "\nAvailable: " + availableAppointments.toString();
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.print("hospital");
     }
 
     public static class AvailableAppointment{

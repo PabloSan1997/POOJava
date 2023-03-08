@@ -10,15 +10,15 @@ public class UIMenu {
 
         int response = 0;
         do {
-            System.out.println("1. Doctor");
-            System.out.println("2. Patient");
+            System.out.println("1. module.Doctor");
+            System.out.println("2. module.Patient");
             System.out.println("0. Salir");
 
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
 
             switch (response){
-                case 1 -> System.out.println("Doctor");
+                case 1 -> System.out.println("module.Doctor");
                 case 2 -> {
                     response = 0; showPatientMenu();
                 }
@@ -32,7 +32,7 @@ public class UIMenu {
         int response = 0;
         do {
             System.out.println("\n\n");
-            System.out.println("Patient");
+            System.out.println("module.Patient");
             System.out.println("1. Book an appointment");
             System.out.println("2. My appointments");
             System.out.println("0. Return");

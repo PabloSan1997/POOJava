@@ -1,4 +1,6 @@
-public class Users  {
+package module;
+
+public abstract class Users  {
     private  int id;
     private  String name;
     private String email;
@@ -57,4 +59,5 @@ public class Users  {
     public String toString() {
         return "User "+name+", email "+ email+"\nAddress "+adress+"\nPhone "+phoneNumber;
     }
+    public abstract void showDataUser();
 }

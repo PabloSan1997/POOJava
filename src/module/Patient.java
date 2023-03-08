@@ -1,11 +1,15 @@
-public class Patient extends Users{
+package module;
+
+
+
+public class Patient extends Users {
 
     private String birthday;
     private double weight;
     private double height;
     private String blood;
 
-    Patient(String name, String email){
+   public Patient(String name, String email){
         super(name,email);
         //Mas instrucciones
 
@@ -48,5 +52,10 @@ public class Patient extends Users{
 
     public String toString() {
         return super.toString() + "\nAge: " + birthday + "\n Weight: " +getWeight()+ "\n Height "+getHeight()+"\nBlood"+blood;
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.print("No se que onda");
     }
 }
